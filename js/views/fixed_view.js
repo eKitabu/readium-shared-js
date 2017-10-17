@@ -112,19 +112,6 @@ var FixedView = function(options, reader){
         
         _$el.css("overflow", "hidden");
         
-        // Removed, see one_page_view@render()
-        // var settings = reader.viewerSettings();
-        // if (!settings || typeof settings.enableGPUHardwareAccelerationCSS3D === "undefined")
-        // {
-        //     //defaults
-        //     settings = new Globals.Models.ViewerSettings({});
-        // }
-        // if (settings.enableGPUHardwareAccelerationCSS3D) {
-        //
-        //     // This fixes rendering issues with WebView (native apps), which crops content embedded in iframes unless GPU hardware acceleration is enabled for CSS rendering.
-        //     _$el.css("transform", "translateZ(0)");
-        // }
-        
         _$viewport.append(_$el);
 
         self.applyStyles();

@@ -236,11 +236,13 @@ console.log("MO CLICKED LINK");
                             return true;
                         }
 
+                        Helpers.logAudioPlayEvent();
                         mediaOverlayPlayer.playUserPar(par);
                         return true;
                     }
                     else
                     {
+                        console.log('readaloud');
                         var readaloud = $(elem).attr("ibooks:readaloud");
                         if (!readaloud)
                         {

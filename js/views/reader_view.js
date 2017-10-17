@@ -1176,7 +1176,7 @@ var ReaderView = function (options) {
      * Start/Resume playback of media overlays.
      */
     this.playMediaOverlay = function () {
-
+        Helpers.logAudioPlayEvent();
         _mediaOverlayPlayer.play();
     };
 
